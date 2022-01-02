@@ -20,6 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <script defer src="index.js"></script>
   </head>
   <body>
     <main>
@@ -28,16 +29,17 @@
           <img src="images/logo.svg" class="logo" alt="logo">
         </div>
         <div class="image">
-          <img src="images/hero-mobile.jpg" class="bg-image-mobile" alt="image">
-          <img src="images/hero-desktop.jpg" class="bg-image-desktop" alt="image">
+          <img src="images/hero-mobile.jpg" class="hero-image-mobile" alt="image">
+          <img src="images/hero-desktop.jpg" class="hero-image-desktop" alt="image">
         </div>
         <div class="main-info">
           <h1><span class="soft-red thin">WE'RE </span>COMING SOON</h1>
           <p class="soft-red">Hello fellow shoppers! We're currently building our new
             fashion store. Add your email below to stay up-to-date with announcements
             and our launch deals.</p>
-            <form action="submit">
-              <input type="email" class="email" placeholder="Email Address">
+            <div id="error"></div>
+            <form id="form" action="submit">
+              <input id="email" type="email"  class="email" placeholder="Email Address" onkeydown="validation()">
               <button><img  class = "arrow" src="images/icon-arrow.svg" alt="arrow icon"></button>
             </form>
             
@@ -50,6 +52,7 @@
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p>
-  </footer> -->
+  </footer> --> 
+
   </body>
 </html>
